@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Title from './components/Title'
+import Board from './components/Board'
 
 const Main = styled.main`
   width: 100vw;
@@ -8,13 +9,14 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #eee;
+  background-color: #CCDDEE;
 `
 
 function App() {
   return (
     <Main>
       <Title text="Progress Tracker"/>
+      <Board/>
     </Main>
   );
 }
