@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 function Title(props) {
   const { text } = props
@@ -9,6 +10,10 @@ function Title(props) {
     text-shadow: 1px 1px #fff;
   `
   return <Title>{text}</Title>
+}
+
+Title.propTypes = { 
+  text: PropTypes.string.isRequired
 }
 
 export default Title
